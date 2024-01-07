@@ -1,0 +1,40 @@
+@import url('https://fonts.cdnfonts.com/css/bankgothic-md-bt');
+
+body {
+    font-family: 'BankGothic Md BT', sans-serif;
+    font-family: 'Bank Gothic Light', sans-serif;
+    font-family: 'BankGothic', sans-serif;
+
+    font-size: 5vw;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #FFF;
+    text-shadow: 1px 1px 2px black;
+    margin: 0;
+    padding: 0;
+}
+
+div#main {
+    display: grid;
+    grid-template-rows: auto;
+    min-height: 100vh;
+    background-image: url('background.jpg'); 
+    background-color: #1D356E;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div#main * {
+    margin: auto;
+}
+
+div#main form input {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+div#main form #errorMessage {
+    color: red;
+    margin: auto;
+}
