@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Enigme</title>
+        <title>Liste d'énigmes</title>
     </head>
     <body>
         <div id="main">
-            <form id="form" action="enigmes.html" method="POST">
+            <ul>
+                <li>Mon premier est à la fois un nombre premier et une ville qui se vit offrir un cheval…</li>
+                <li>Mon second est infiniment vertical…</li>
+                <li>Lorsque mon troisième rencontre une certaine plante, cela donne un symbole pour toute une île.</li>
+                <li>Attila est mon quatrième</li>
+                <li>Mon cinquième est l’opposé de mon second dans un certain sens.</li>
+
+                <li>Mon tout est une destination</p>
+            </ul>
+
+            <form id="form" action="success.html" method="POST">
                 <input type="text" id="answer" name="answer">
                 <input type="submit" value="Tester">
                 <div id="errorMessage"></div>
             </form>
         </div>
+
         <script>
             document.querySelector('form').addEventListener('submit', function(event) {
                 event.preventDefault();
                 var password = document.getElementById('answer');
 
-                if (password.value.toUpperCase() === 'ETOILES') {
+                if (password.value.toUpperCase() === '38410') {
                     this.submit();
                 } else {
                     var errorMessages = [
