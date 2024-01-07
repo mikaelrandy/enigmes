@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Enigme</title>
+        <title>Liste d'énigmes</title>
     </head>
     <body>
         <div id="main">
-            <form id="form" action="enigme1.html" method="GET">
+            <p>Mon second est infiniment vertical…</p>
+
+            <form id="form" action="enigme3.html" method="GET">
                 <input type="text" id="answer" name="answer">
                 <input type="submit" value="Tester">
                 <div id="errorMessage"></div>
             </form>
         </div>
+
         <script>
             document.querySelector('form').addEventListener('submit', function(event) {
                 event.preventDefault();
                 var password = document.getElementById('answer');
 
-                if (password.value.toUpperCase() === 'ETOILES') {
+                if (password.value.toUpperCase() === '8') {
                     this.submit();
                 } else {
                     var errorMessages = [

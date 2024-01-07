@@ -8,17 +8,9 @@
     </head>
     <body>
         <div id="main">
-            <ul>
-                <li>Mon premier est à la fois un nombre premier et une ville qui se vit offrir un cheval…</li>
-                <li>Mon second est infiniment vertical…</li>
-                <li>Lorsque mon troisième rencontre une certaine plante, cela donne un symbole pour toute une île.</li>
-                <li>Attila est mon quatrième</li>
-                <li>Mon cinquième est l’opposé de mon second dans un certain sens.</li>
+            <p>Lorsque mon troisième rencontre une certaine plante, cela donne un symbole pour toute une île.</p>
 
-                <li>Mon tout est une destination</p>
-            </ul>
-
-            <form id="form" action="success.html" method="GET">
+            <form id="form" action="enigme4.html" method="GET">
                 <input type="text" id="answer" name="answer">
                 <input type="submit" value="Tester">
                 <div id="errorMessage"></div>
@@ -30,7 +22,7 @@
                 event.preventDefault();
                 var password = document.getElementById('answer');
 
-                if (password.value.toUpperCase() === '38410') {
+                if (password.value.toUpperCase() === '4') {
                     this.submit();
                 } else {
                     var errorMessages = [

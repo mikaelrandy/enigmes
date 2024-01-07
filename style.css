@@ -5,7 +5,7 @@ body {
     font-family: 'Bank Gothic Light', sans-serif;
     font-family: 'BankGothic', sans-serif;
 
-    font-size: 130%;
+    font-size: 3vw;
     font-weight: 400;
     line-height: 1.5;
     color: #FFF;
@@ -27,6 +27,12 @@ div#main {
 
 div#main * {
     margin: auto;
+}
+
+div#main p {
+    margin: 20%;
+    margin-bottom: 5%;
+    height: fit-content;
 }
 
 div#main form input {
